@@ -1,0 +1,15 @@
+isMultiple = False
+divisors = list(range(1, 21))
+counter = 0
+testNum = 5
+
+while isMultiple == False:
+	if testNum % divisors[counter] == 0:
+		# print(testNum, "%", divisors[counter], "is 0")
+		counter += 1
+		if counter == 20:
+			isMultiple = True
+			print(testNum)
+	else:
+		testNum += 5
+		counter = 0
