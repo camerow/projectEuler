@@ -1,0 +1,10 @@
+x = list(range(800, 1000))
+y = list(range(800, 1000))
+
+palindromes = []
+
+for val1 in x:
+	for val2 in y:
+		product = str(val1 * val2)
+		if product == product[::-1]:
+			print(val1, val2, product, product[::-1])
